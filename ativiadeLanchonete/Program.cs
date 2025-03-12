@@ -7,7 +7,7 @@ namespace ativiadeLanchonete
     {
         static void Main(string[] args)
         {
-            // Lista de produtos disponíveis no cardápio
+           
             List<Produto> cardapio = new List<Produto>
             {
                 new Produto("X-Burger", 15.00m),
@@ -17,10 +17,10 @@ namespace ativiadeLanchonete
                 new Produto("Água", 3.00m)
             };
 
-            // Criando um novo pedido
+            
             Pedido pedido = new Pedido(1);
 
-            // Menu interativo
+            
             bool continuarPedido = true;
             while (continuarPedido)
             {
@@ -47,7 +47,7 @@ namespace ativiadeLanchonete
                 }
             }
 
-            // Exibindo o resumo do pedido
+            
             Console.WriteLine("\nResumo do Pedido:");
             pedido.ExibirDetalhes();
         }
